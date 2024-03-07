@@ -7,8 +7,8 @@ cache: node_modules
 install:
   - yarn
 build_script:
-  - yarn build # команда сборки
-
+  - yarn start # команда сборки
+  
 deploy_script: # скрипт развёртывания
   - git config --global credential.helper store
   - git config --global user.name AppVeyor

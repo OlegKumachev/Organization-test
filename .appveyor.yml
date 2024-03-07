@@ -8,10 +8,13 @@ cache: node_modules  # кеширование
 
 install:
   - yarn install  # команда установки зависимостей
+build: off
 
 build_script:
   - yarn start   # команда сборки
   
+test_script:
+  - yarn test  # скрипт тестирования
 
 deploy_script:  # скрипт развёртывания
   - git config --global credential.helper store

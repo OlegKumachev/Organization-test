@@ -1,5 +1,5 @@
 
-name: Netology AHJ
+name: netotesthw
 
 on: [push, pull_request]
 

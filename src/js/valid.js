@@ -1,3 +1,4 @@
+/* eslint-disable no-undef */
 module.exports = function luhnAlgorithm(cardNumber) {
   const cardNumberArray = Array.from(cardNumber).map(Number);
   const checkDigit = cardNumberArray.pop();

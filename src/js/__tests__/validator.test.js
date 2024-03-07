@@ -1,29 +1,30 @@
-const luhnAlgorithm = require('../valid.js');
+/* eslint-disable no-undef */
+const luhnAlgorithm = require("../valid.js");
 
-describe('проверка карт', () => {
+describe("проверка карт", () => {
   const testCase = [
     {
-      cart: '3566002020360505',
+      cart: "3566002020360505",
       expected: true,
     },
     {
-      cart: '5538300838605560',
+      cart: "5538300838605560",
       expected: true,
     },
     {
-      cart: '4024007123874108',
+      cart: "4024007123874108",
       expected: true,
     },
     {
-      cart: '12346',
+      cart: "12346",
       expected: false,
     },
     {
-      cart: 'hfhhsss',
+      cart: "hfhhsss",
       expected: false,
     },
     {
-      cart: '1de124 ',
+      cart: "1de124 ",
       expected: false,
     },
   ];

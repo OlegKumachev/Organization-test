@@ -5,12 +5,16 @@ describe('Card validation functionality', () => {
   let page;
 
   beforeAll(async () => {
-    browser = await puppeteer.launch();
+    browser = await puppeteer.launch({
+      headless: false,
+      slowMo: 100,
+      devtools: true,
+    });
   });
 
   beforeEach(async () => {
     page = await browser.newPage();
-    await page.goto('http://localhost:8080/');
+    await page.goto('http://localhost:9000/');
   });
 
   afterEach(async () => {

@@ -27,6 +27,7 @@
   "devDependencies": {
     "babel-jest": "^29.7.0",
     "core-js": "3",
+    "css-minimizer-webpack-plugin": "^6.0.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-base": "^15.0.0",
     "eslint-config-prettier": "^9.1.0",
@@ -41,5 +42,6 @@
     "puppeteer": "^22.4.1",
     "puppeteer-extra": "^3.3.6",
     "webpack-merge": "^5.10.0"
-  }
+  },
+  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/OlegKumachev/Organization-of-testing?svg=true)](https://ci.appveyor.com/project/OlegKumachev/Organization-of-testing)"
 }

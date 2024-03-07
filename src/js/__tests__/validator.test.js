@@ -1,4 +1,4 @@
-const luhnAlgorithm = require('../valid');
+const luhnAlgorithm = require('../valid.js');
 
 describe('проверка карт', () => {
   const testCase = [
@@ -28,12 +28,9 @@ describe('проверка карт', () => {
     },
   ];
   testCase.forEach((test) => {
-    it(
-      `входящие данные : ${test.cart} ожидаю: ${test.expected}`,
-      () => {
-        const result = luhnAlgorithm(test.cart);
-        expect(result).toBe(test.expected);
-      },
-    );
+    it(`входящие данные : ${test.cart} ожидаю: ${test.expected}`, () => {
+      const result = luhnAlgorithm(test.cart);
+      expect(result).toBe(test.expected);
+    });
   });
 });

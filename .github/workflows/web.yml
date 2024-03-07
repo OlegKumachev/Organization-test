@@ -37,7 +37,7 @@ jobs:
         run: yarn lint
 
       - name: Build
-        run: yarn build
+        run: yarn start
 
       - name: Setup Pages
         uses: actions/configure-pages@v2

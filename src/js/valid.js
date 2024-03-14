@@ -1,19 +1,19 @@
-module.exports =  function luhnAlgorithm(cardNumber) {
-    let cardNumberArray = Array.from(cardNumber).map(Number);
-    let checkDigit = cardNumberArray.pop();
+module.exports = function luhnAlgorithm(cardNumber) {
+  const cardNumberArray = Array.from(cardNumber).map(Number);
+  const checkDigit = cardNumberArray.pop();
 
-    cardNumberArray.reverse();
+  cardNumberArray.reverse();
 
-    for (let i = 0; i < cardNumberArray.length; i++) {
-        if (i % 2 === 0) {
-            cardNumberArray[i] *= 2;
-            if (cardNumberArray[i] > 9) {
-                cardNumberArray[i] -= 9;
-            }
-        }
+  for (let i = 0; i < cardNumberArray.length; i++) {
+    if (i % 2 === 0) {
+      cardNumberArray[i] *= 2;
+      if (cardNumberArray[i] > 9) {
+        cardNumberArray[i] -= 9;
+      }
     }
+  }
 
-    let total = cardNumberArray.reduce((acc, curr) => acc + curr, checkDigit);
+  const total = cardNumberArray.reduce((acc, curr) => acc + curr, checkDigit);
 
-    return total % 10 === 0;
+  return total % 10 === 0;
 };

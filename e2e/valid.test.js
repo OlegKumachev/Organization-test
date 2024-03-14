@@ -26,7 +26,7 @@ describe('Card validation functionality', () => {
     await page.click('.submit');
     await page.waitForSelector('#result');
 
-    const resultText = await page.$eval('#result', el => el.textContent);
+    const resultText = await page.$eval('#result', (el) => el.textContent);
 
     expect(resultText).toBe('Valid');
   });
@@ -36,7 +36,7 @@ describe('Card validation functionality', () => {
     await page.click('.submit');
     await page.waitForSelector('#result');
 
-    const resultText = await page.$eval('#result', el => el.textContent);
+    const resultText = await page.$eval('#result', (el) => el.textContent);
 
     expect(resultText).toBe('Not valid');
   });

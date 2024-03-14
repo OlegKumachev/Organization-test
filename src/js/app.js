@@ -1,10 +1,10 @@
-import IdentifyCarts from './cards';
-import luhnAlgorithm from './valid';
+import IdentifyCarts from "./cards";
+import luhnAlgorithm from "./valid";
 
-if (typeof document !== 'undefined') {
-  const input = document.querySelector('input');
+if (typeof document !== "undefined") {
+  const input = document.querySelector("input");
 
-  input.addEventListener('input', () => {
+  input.addEventListener("input", () => {
     const type = IdentifyCarts(input.value);
 
     if (type) {
@@ -12,10 +12,12 @@ if (typeof document !== 'undefined') {
     }
   });
 
-  input.parentNode.addEventListener('submit', (e) => {
+  input.parentNode.addEventListener("submit", (e) => {
     e.preventDefault();
-    const result = document.getElementById('result');
-    result.textContent = '';
-    luhnAlgorithm(input.value) ? result.textContent = 'Valid' : result.textContent = 'Not valid';
+    const result = document.getElementById("result");
+    result.textContent = "";
+    luhnAlgorithm(input.value)
+      ? (result.textContent = "Valid")
+      : (result.textContent = "Not valid");
   });
 }

@@ -6,8 +6,14 @@ branches:
 cache: node_modules
 install:
   - yarn
+  
+ build: off  # отключаем встроенную в appveyor систему сборки
+
 build_script:
   - yarn start # команда сборки
+
+test_script:
+  - yarn run lint && yarn test  # скрипт тестирования
   
 deploy_script: # скрипт развёртывания
   - git config --global credential.helper store

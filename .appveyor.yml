@@ -4,10 +4,11 @@ branches:
   only:
   - master # ветка git
 cache: node_modules
+
 install:
   - yarn
   
- build: off  # отключаем встроенную в appveyor систему сборки
+build: off  # отключаем встроенную в appveyor систему сборки
 
 build_script:
   - yarn start # команда сборки

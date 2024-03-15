@@ -45,5 +45,4 @@
     "puppeteer-extra": "^3.3.6",
     "webpack-merge": "^5.10.0"
   },
-  "description": "[![Build status](https://ci.appveyor.com/api/projects/status/OlegKumachev/Organization-of-testing?svg=true)](https://ci.appveyor.com/project/OlegKumachev/Organization-of-testing)"
 }

@@ -1,4 +1,4 @@
-[![Build status](https://ci.appveyor.com/api/projects/status/OlegKumachev/Organization-of-testing?svg=true)](https://ci.appveyor.com/project/OlegKumachev/Organization-of-testing)
+[![Build status](https://ci.appveyor.com/api/projects/status/OlegKumachev/organization-test?svg=true)](https://ci.appveyor.com/project/OlegKumachev/organization-test)
 
 
-[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Link-blue)](https://olegkumachev.github.io/Organization-of-testing/)
+[![GitHub Pages](https://img.shields.io/badge/GitHub_Pages-Link-blue)](https://olegkumachev.github.io/organization-test/)

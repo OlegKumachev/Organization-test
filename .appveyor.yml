@@ -10,8 +10,8 @@ install:
   - yarn install  # команда установки зависимостей
 build: off
 
-yarn build:
-  - yarn start   # команда сборки
+build_script:
+  - yarn build    # команда сборки
   
 test_script:
   - yarn test  # скрипт тестирования

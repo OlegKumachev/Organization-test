@@ -11,8 +11,7 @@ install:
 build: off
 
 build_script:
-  - yarn build  
-  - yarn start # команда сборки
+  - yarn build # команда сборки
   
 test_script:
   - yarn test  # скрипт тестирования
